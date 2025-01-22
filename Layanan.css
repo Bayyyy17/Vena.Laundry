@@ -1,0 +1,217 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f9f5f7;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 100px;
+    width: 150px;
+}
+
+/* Styling untuk navigasi secara keseluruhan */
+nav ul {
+    display: flex;
+    justify-content: center; /* Memusatkan menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling untuk setiap item di menu */
+nav ul li {
+    margin: 0 20px; /* Memberikan jarak antar item */
+}
+
+/* Styling untuk link navigasi */
+nav ul li a {
+    text-decoration: none;
+    color: #f14db2; /* Warna teks default */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk perubahan warna dan efek transform */
+}
+
+/* Efek hover pada link navigasi */
+nav ul li a:hover {
+    color: #101010; /* Warna hijau pada hover */
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Efek garis bawah yang muncul saat hover */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efade7; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi untuk garis bawah */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Membuka garis bawah saat hover */
+}
+/* Styling untuk section layanan dan testimoni */
+.services-testimonials {
+    padding: 50px 20px;
+    background: linear-gradient(-45deg, #d5cbd5,#f6f3f5,#f1f3f4,#d5a0c2);
+}
+
+/* Deskripsi Layanan */
+.service-description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-description h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.service-description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Styling untuk Cards Layanan */
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: #ead6e4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #131313;
+    margin: 15px 0 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #0c0c0c;
+}
+/* Styling untuk Testimoni */
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.testimonial-card strong {
+    font-weight: bold;
+    color: #0a120b;
+}
+
+/* Gambar Testimoni */
+.testimonial-img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Responsif untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-card {
+        width: 80%;
+    }
+
+    .testimonial-img {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* Footer Section */
+.footer {
+    background: linear-gradient(-45deg, #ef75c6,#f6f3f5,#e56cb5,#f5c6e4);
+    color: rgb(10, 4, 4);              /* Warna teks footer */
+    padding: 30px 20px;        /* Padding di dalam footer */
+    text-align: center;        /* Teks rata tengah */
+    font-size: 18px;           /* Ukuran font */
+    margin-top: 40px;          /* Memberikan jarak antara konten utama dan footer */
+}
+
+.footer .footer-content {
+    max-width: 1000px;         /* Lebar maksimum konten footer */
+    margin: 0 auto;            /* Pusatkan konten footer */
+}
+
+.footer p {
+    margin: 10px 0;            /* Jarak antar paragraf */
+    line-height: 1.6;          /* Tinggi baris teks */
+}
+
+.footer .footer-links {
+    margin-top: 20px;          /* Jarak antara deskripsi dan link */
+}

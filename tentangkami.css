@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f9f5f7;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 100px;
+    width: 150px;
+}
+
+/* Styling untuk navigasi secara keseluruhan */
+nav ul {
+    display: flex;
+    justify-content: center; /* Memusatkan menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling untuk setiap item di menu */
+nav ul li {
+    margin: 0 20px; /* Memberikan jarak antar item */
+}
+
+/* Styling untuk link navigasi */
+nav ul li a {
+    text-decoration: none;
+    color: #f14db2; /* Warna teks default */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk perubahan warna dan efek transform */
+}
+
+/* Efek hover pada link navigasi */
+nav ul li a:hover {
+    color: #101010; /* Warna hijau pada hover */
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Efek garis bawah yang muncul saat hover */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efade7; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi untuk garis bawah */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Membuka garis bawah saat hover */
+}
+/* About Us Section */
+.about-us {
+    background: linear-gradient(-45deg, #ede2ed,#f6f3f5,#f1f3f4,#ecbad9);
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.about-us h2 {
+    color: #131213;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: #0e0d0d;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Visi & Misi */
+.vision-mission {
+    margin-bottom: 40px;
+}
+
+.vision-mission strong {
+    color: #101010;
+}
+
+/* Layanan Kami */
+.services {
+    margin-bottom: 40px;
+}
+
+.services ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Mengapa Memilih Kami */
+.why-choose-us {
+    margin-bottom: 40px;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Galeri Layanan */
+.image-gallery {
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #080808;
+    font-weight: bold;
+}
+
+/* Efek Hover pada Gambar Galeri */
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Hubungi Kami */
+.contact-us {
+   background-image: url(Desain\ tanpa\ judul\ \(5\).png);
+    padding: 40px;
+    margin-top: 60px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #101111;
+}
+
+.contact-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-us ul li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact-us ul li a {
+    color: #0d0e0f;
+    text-decoration: none;
+}
+
+.contact-us ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness: Mobile View */
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 20px;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contact-us {
+        padding: 20px;
+    }
+
+    .vision-mission, .services, .why-choose-us {
+        margin-bottom: 30px;
+    }
+}
+/* Footer Section */
+.footer {
+    background: linear-gradient(-45deg, #ef75c6,#f6f3f5,#e56cb5,#f5c6e4);
+    color: rgb(10, 4, 4);              /* Warna teks footer */
+    padding: 30px 20px;        /* Padding di dalam footer */
+    text-align: center;        /* Teks rata tengah */
+    font-size: 18px;           /* Ukuran font */
+    margin-top: 40px;          /* Memberikan jarak antara konten utama dan footer */
+}
+
+.footer .footer-content {
+    max-width: 1000px;         /* Lebar maksimum konten footer */
+    margin: 0 auto;            /* Pusatkan konten footer */
+}
+
+.footer p {
+    margin: 10px 0;            /* Jarak antar paragraf */
+    line-height: 1.6;          /* Tinggi baris teks */
+}
+
+.footer .footer-links {
+    margin-top: 20px;          /* Jarak antara deskripsi dan link */
+}

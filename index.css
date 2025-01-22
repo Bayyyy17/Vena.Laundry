@@ -1,0 +1,308 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f9f5f7;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 100px;
+    width: 150px;
+}
+
+/* Styling untuk navigasi secara keseluruhan */
+nav ul {
+    display: flex;
+    justify-content: center; /* Memusatkan menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling untuk setiap item di menu */
+nav ul li {
+    margin: 0 20px; /* Memberikan jarak antar item */
+}
+
+/* Styling untuk link navigasi */
+nav ul li a {
+    text-decoration: none;
+    color: #f14db2; /* Warna teks default */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk perubahan warna dan efek transform */
+}
+
+/* Efek hover pada link navigasi */
+nav ul li a:hover {
+    color: #101010; /* Warna hijau pada hover */
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Efek garis bawah yang muncul saat hover */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efade7; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi untuk garis bawah */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Membuka garis bawah saat hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 90px 70px;
+    text-align: center;
+    background-image: url('Desain\ tanpa\ judul\ \(5\).png'); /* Ganti dengan URL gambar latar belakang */
+    background-size: cover; /* Agar gambar menutupi seluruh elemen */
+    background-position: center center; /* Agar gambar berada di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+}
+
+.content {
+    max-width: 400px;
+    margin: 0 auto;
+    color: white; /* Agar teks terlihat jelas */
+    background-color: rgba(0, 0, 0, 0.5); /* Membuat latar belakang sedikit transparan */
+    padding: 90px;
+    border-radius: 8px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f764bf;
+    color: rgb(5, 5, 5);
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fbfbfb;
+}
+/* Steps Section */
+.steps {
+    padding: 100px 80px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .step img {
+    width: 90px;
+    margin-bottom: 15px;
+  }
+  
+  .step h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 20px;
+    color: #0e0e0e;
+  }
+  /* Tentang Vena Laundry */
+.about-us {
+    background-image: url(Desain\ tanpa\ judul\ \(5\).png) ;/* Background lebih terang untuk section ini */
+    padding: 40px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.about-btn {
+    display: inline-block;
+    background-color: #f764bf;  /* Warna latar belakang hijau */
+    color: rgb(14, 14, 14);               /* Warna teks putih */
+    font-size: 16px;
+    padding: 12px 30px;         /* Jarak padding di dalam tombol */
+    text-align: center;
+    border-radius: 5px;         /* Sudut tombol membulat */
+    text-decoration: none;      /* Menghilangkan garis bawah pada link */
+    margin-top: 20px;           /* Jarak atas tombol */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+}
+
+.about-btn:hover {
+    background-color: #f1f7f1;  /* Warna latar belakang lebih gelap saat hover */
+    transform: scale(1.05);      /* Membesarkan tombol sedikit */
+}
+
+.about-btn:focus {
+    outline: none;  /* Menghilangkan outline saat tombol difokuskan */
+}
+/* Testimoni */
+.testimonials {
+    background: linear-gradient(-45deg, #d5cbd5,#f6f3f5,#f1f3f4,#d5a0c2);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #090707;
+    line-height: 1.6;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+/* Kontak Kami */
+.contact {
+    background-image: url(Desain\ tanpa\ judul\ \(5\).png);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #fd52c7;
+}
+
+.contact h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: linear-gradient(-45deg, #f8f6f8,#f8f6f7,#f1f3f4,#e0e0e0);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item img {
+    width: 70px;
+    height: 50px;
+}
+
+.contact-item p {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.contact-item a {
+    color: #121213;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+/* Footer Section */
+.footer {
+    background: linear-gradient(-45deg, #ef75c6,#f6f3f5,#e56cb5,#f5c6e4);
+    color: rgb(10, 4, 4);              /* Warna teks footer */
+    padding: 30px 20px;        /* Padding di dalam footer */
+    text-align: center;        /* Teks rata tengah */
+    font-size: 18px;           /* Ukuran font */
+    margin-top: 40px;          /* Memberikan jarak antara konten utama dan footer */
+}
+
+.footer .footer-content {
+    max-width: 1000px;         /* Lebar maksimum konten footer */
+    margin: 0 auto;            /* Pusatkan konten footer */
+}
+
+.footer p {
+    margin: 10px 0;            /* Jarak antar paragraf */
+    line-height: 1.6;          /* Tinggi baris teks */
+}
+
+.footer .footer-links {
+    margin-top: 20px;          /* Jarak antara deskripsi dan link */
+}
+

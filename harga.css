@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f9f5f7;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 100px;
+    width: 150px;
+}
+
+/* Styling untuk navigasi secara keseluruhan */
+nav ul {
+    display: flex;
+    justify-content: center; /* Memusatkan menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling untuk setiap item di menu */
+nav ul li {
+    margin: 0 20px; /* Memberikan jarak antar item */
+}
+
+/* Styling untuk link navigasi */
+nav ul li a {
+    text-decoration: none;
+    color: #f14db2; /* Warna teks default */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk perubahan warna dan efek transform */
+}
+
+/* Efek hover pada link navigasi */
+nav ul li a:hover {
+    color: #101010; /* Warna hijau pada hover */
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Efek garis bawah yang muncul saat hover */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efade7; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi untuk garis bawah */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Membuka garis bawah saat hover */
+}
+/* Styling untuk Tabel Harga */
+* Section Harga */
+.pricing {
+    text-align: center; /* Membuat teks di section ini rata tengah */
+    padding: 20px;
+}
+
+/* Styling untuk h3 */
+.pricing h3 {
+    text-align: center; /* Menengahkannya secara horizontal */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0; /* Memberikan padding di atas dan bawah */
+}
+.pricing-table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Membuat sudut tabel melengkung */
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #141313;
+    border-radius: 5px; /* Sudut melengkung pada setiap sel */
+}
+
+/* Header Tabel */
+.pricing-table th {
+    background: linear-gradient(-45deg, #ebb6eb,#e99acf,#f1f3f4,#e88fc2);
+    color: rgb(16, 16, 16);
+    font-weight: bold;
+    text-transform: uppercase; /* Membuat tulisan menjadi huruf kapital semua */
+}
+
+/* Baris Tabel */
+.pricing-table td {
+    background-color: #f9f9f9; /* Warna latar belakang terang untuk baris tabel */
+    color: #333; /* Warna teks */
+    transition: background-color 0.3s ease; /* Transisi saat hover */
+}
+
+/* Efek Hover pada Baris Tabel */
+.pricing-table tr:hover td {
+    background-color: #f69ae2; /* Efek latar belakang hijau muda saat hover */
+}
+
+/* Warna Latar Belakang Alternatif pada Baris Genap */
+.pricing-table tr:nth-child(even) td {
+    background-color: #f6f3f6; /* Warna latar belakang baris genap */
+}
+
+/* Efek Hover pada Baris Genap */
+.pricing-table tr:nth-child(even):hover td {
+    background-color: #f69ae2; /* Efek hover untuk baris genap */
+}
+
+/* Memberikan Efek Border pada Setiap Sel Tabel */
+.pricing-table td, .pricing-table th {
+    border-bottom: 2px solid #0e0d0e; /* Menambahkan garis bawah pada setiap kolom */
+}
+
+
+/* Styling untuk Tabel Harga di Mobile */
+@media (max-width: 768px) {
+    .pricing-table {
+        width: 100%;
+    }
+
+    .pricing-table th, .pricing-table td {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+/* Footer Section */
+.footer {
+    background: linear-gradient(-45deg, #ef75c6,#f6f3f5,#e56cb5,#f5c6e4);
+    color: rgb(10, 4, 4);              /* Warna teks footer */
+    padding: 30px 20px;        /* Padding di dalam footer */
+    text-align: center;        /* Teks rata tengah */
+    font-size: 18px;           /* Ukuran font */
+    margin-top: 40px;          /* Memberikan jarak antara konten utama dan footer */
+}
+
+.footer .footer-content {
+    max-width: 1000px;         /* Lebar maksimum konten footer */
+    margin: 0 auto;            /* Pusatkan konten footer */
+}
+
+.footer p {
+    margin: 10px 0;            /* Jarak antar paragraf */
+    line-height: 1.6;          /* Tinggi baris teks */
+}
+
+.footer .footer-links {
+    margin-top: 20px;          /* Jarak antara deskripsi dan link */
+}

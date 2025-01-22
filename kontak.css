@@ -1,0 +1,262 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f9f5f7;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 100px;
+    width: 150px;
+}
+
+/* Styling untuk navigasi secara keseluruhan */
+nav ul {
+    display: flex;
+    justify-content: center; /* Memusatkan menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling untuk setiap item di menu */
+nav ul li {
+    margin: 0 20px; /* Memberikan jarak antar item */
+}
+
+/* Styling untuk link navigasi */
+nav ul li a {
+    text-decoration: none;
+    color: #f14db2; /* Warna teks default */
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk perubahan warna dan efek transform */
+}
+
+/* Efek hover pada link navigasi */
+nav ul li a:hover {
+    color: #101010; /* Warna hijau pada hover */
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+}
+
+/* Efek garis bawah yang muncul saat hover */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #efade7; /* Warna garis bawah */
+    transition: width 0.3s ease; /* Efek transisi untuk garis bawah */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Membuka garis bawah saat hover */
+}/* Kontak Kami Section */
+.contact-us {
+    background: linear-gradient(-45deg, #ede2ed,#f6f3f5,#f1f3f4,#ecbad9);
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #f722bb;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #060707;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #ea54a4;
+    color: #111010;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #faf3f7;
+}
+
+/* Styling untuk bagian kontak */
+.contact-info {
+    background: linear-gradient(-45deg, #ea87ce,#f3bfe2,#f1f3f4,#ed9cce);
+    padding: 50px 0;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    color:  #f722bb;
+    margin-bottom: 40px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.contact-details h3 {
+    font-size: 1.4em;
+    color:#060506;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    color: #090909;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-details p a {
+    color: #070707;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details p a:hover {
+    text-decoration: underline;
+}
+
+.contact-details p:hover {
+    background-color: #ec78c9;
+}
+
+/* Efek hover untuk ikon */
+.contact-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Responsif untuk perangkat kecil (mobile/tablet) */
+@media screen and (max-width: 768px) {
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-details p {
+        font-size: 1em;
+    }
+}
+/* Footer Section */
+.footer {
+    background: linear-gradient(-45deg, #ef75c6,#f6f3f5,#e56cb5,#f5c6e4);
+    color: rgb(10, 4, 4);              /* Warna teks footer */
+    padding: 30px 20px;        /* Padding di dalam footer */
+    text-align: center;        /* Teks rata tengah */
+    font-size: 18px;           /* Ukuran font */
+    margin-top: 40px;          /* Memberikan jarak antara konten utama dan footer */
+}
+
+.footer .footer-content {
+    max-width: 1000px;         /* Lebar maksimum konten footer */
+    margin: 0 auto;            /* Pusatkan konten footer */
+}
+
+.footer p {
+    margin: 10px 0;            /* Jarak antar paragraf */
+    line-height: 1.6;          /* Tinggi baris teks */
+}
+
+.footer .footer-links {
+    margin-top: 20px;          /* Jarak antara deskripsi dan link */
+}
